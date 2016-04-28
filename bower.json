@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "description": "Kirk Byers' Portfolio",
+  "main": "app.js",
+  "authors": [
+    "Kirk Byers"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.6.1"
+  }
+}
