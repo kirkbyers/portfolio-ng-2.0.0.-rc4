@@ -38,6 +38,7 @@ module.exports = function () {
             '**/*.module.js',
             '**/*.js'
         ],
+        scss: client + 'styles/index.scss',
         server: server,
         source: 'src/',
         temp: temp,
