@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './about/about.component', './contact/contact.component', './projects/projects.component', './skills/skills.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './about/about.component', './contact/contact.component', './projects/projects.component', './skills/skills.component', './catan_dice/catan_dice.component', '../widgets/navbar/navbar.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './about/about.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, about_component_1, contact_component_1, projects_component_1, skills_component_1;
+    var core_1, router_1, about_component_1, contact_component_1, projects_component_1, skills_component_1, catan_dice_component_1, navbar_component_1;
     var AppComponent;
     return {
         setters:[
@@ -31,6 +31,12 @@ System.register(['angular2/core', 'angular2/router', './about/about.component', 
             },
             function (skills_component_1_1) {
                 skills_component_1 = skills_component_1_1;
+            },
+            function (catan_dice_component_1_1) {
+                catan_dice_component_1 = catan_dice_component_1_1;
+            },
+            function (navbar_component_1_1) {
+                navbar_component_1 = navbar_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -41,7 +47,7 @@ System.register(['angular2/core', 'angular2/router', './about/about.component', 
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: "src/client/app/app.component.html",
-                        directives: [router_1.ROUTER_DIRECTIVES],
+                        directives: [router_1.ROUTER_DIRECTIVES, navbar_component_1.NavbarComponent],
                         providers: [router_1.ROUTER_PROVIDERS]
                     }),
                     router_1.RouteConfig([
@@ -63,8 +69,13 @@ System.register(['angular2/core', 'angular2/router', './about/about.component', 
                         },
                         {
                             path: '/skills',
-                            name: 'Skils',
+                            name: 'Skills',
                             component: skills_component_1.SkillsComponent
+                        },
+                        {
+                            path: '/catan',
+                            name: 'Catan',
+                            component: catan_dice_component_1.CatanDiceComponent
                         }
                     ]), 
                     __metadata('design:paramtypes', [])

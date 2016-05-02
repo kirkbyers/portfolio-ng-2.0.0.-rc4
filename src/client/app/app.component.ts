@@ -5,11 +5,14 @@ import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {SkillsComponent} from './skills/skills.component';
+import {CatanDiceComponent} from './catan_dice/catan_dice.component';
+
+import {NavbarComponent} from '../widgets/navbar/navbar.component';
 
 @Component({
     selector: 'my-app',
     templateUrl:`src/client/app/app.component.html`,
-    directives:[ROUTER_DIRECTIVES],
+    directives:[ROUTER_DIRECTIVES, NavbarComponent],
     providers:[ROUTER_PROVIDERS]
 })
 
@@ -32,8 +35,13 @@ import {SkillsComponent} from './skills/skills.component';
     },
     {
         path:'/skills',
-        name: 'Skils',
+        name: 'Skills',
         component: SkillsComponent
+    },
+    {
+        path: '/catan',
+        name: 'Catan',
+        component: CatanDiceComponent
     }
 ])
 

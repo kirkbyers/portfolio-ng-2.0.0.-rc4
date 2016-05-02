@@ -1,0 +1,26 @@
+<div class="columns">
+    <div class="container column" *ngFor="#die of dice">
+        <div class="">
+            {{die.value}}
+        </div>
+        <div class="button" *ngIf="!die.keep" (click)="die.keep = !die.keep">
+            Keep
+        </div>
+        <div class="button" *ngIf="die.keep" (click)="die.keep = !die.keep">
+            Roll
+        </div>
+    </div>
+</div>
+<div class="columns">
+    <div class="button column" (click)="rollTurn()">
+        Reroll
+    </div>
+</div>
+<div class="columns">
+    <div class="column" *ngIf="turn.totalRolls < 2">
+        Turn {{turn.totalRolls + 1}}
+    </div>
+    <div class="button column" (click)="endTurn()" *ngIf="turn.totalRolls >= 2">
+        End Turn
+    </div>
+</div>

@@ -1,5 +1,6 @@
 <html>
-  <head>
+
+<head>
     <base href="/" />
     <title>My First ng2 App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,22 +22,26 @@
 
     <!-- 2. Configure SystemJS -->
     <script>
-      System.config({
-        packages: {
-          'src/client': {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('src/client/main.js')
+        System.config({
+            packages: {
+                'src/client': {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('src/client/main.js')
             .then(null, console.error.bind(console));
     </script>
 
-  </head>
+</head>
 
-  <!-- 3. Display the application -->
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+<!-- 3. Display the application -->
+
+<body>
+    <div class="hero is-fullheight">
+        <my-app class="hero-content container">Loading...</my-app>
+    </div>
+</body>
+
 </html>
