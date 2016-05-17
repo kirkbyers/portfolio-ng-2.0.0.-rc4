@@ -1,4 +1,9 @@
 <div class="columns">
+    <div class="column">
+        Roll {{turn.totalRolls + 1}}
+    </div>
+</div>
+<div class="columns">
     <div class="container column" *ngFor="#die of dice">
         <div class="">
             {{die.value}}
@@ -12,15 +17,12 @@
     </div>
 </div>
 <div class="columns">
-    <div class="button column" (click)="rollTurn()">
+    <div class="button column" (click)="rollTurn()" *ngIf="turn.totalRolls < 2">
         Reroll
     </div>
 </div>
 <div class="columns">
-    <div class="column" *ngIf="turn.totalRolls < 2">
-        Turn {{turn.totalRolls + 1}}
-    </div>
-    <div class="button column" (click)="endTurn()" *ngIf="turn.totalRolls >= 2">
+    <div class="button column" (click)="endTurn()">
         End Turn
     </div>
 </div>

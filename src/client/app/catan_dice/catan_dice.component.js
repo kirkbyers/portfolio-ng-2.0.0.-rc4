@@ -33,13 +33,15 @@ System.register(['angular2/core', './util/util.service'], function(exports_1, co
                     }
                 };
                 CatanDiceComponent.prototype.rollTurn = function () {
-                    for (var _i = 0, _a = this.dice; _i < _a.length; _i++) {
-                        var die = _a[_i];
-                        if (!die.keep) {
-                            die.roll();
+                    if (this.turn.totalRolls < 2) {
+                        for (var _i = 0, _a = this.dice; _i < _a.length; _i++) {
+                            var die = _a[_i];
+                            if (!die.keep) {
+                                die.roll();
+                            }
                         }
+                        this.turn.totalRolls++;
                     }
-                    this.turn.totalRolls++;
                 };
                 CatanDiceComponent.prototype.endTurn = function () {
                     this.turn = new util_service_1.Turn;

@@ -18,12 +18,14 @@ export class CatanDiceComponent implements OnInit{
     public turn = new Turn;
 
     rollTurn () {
-        for(let die of this.dice) {
-            if(!die.keep) {
-                die.roll();
+        if(this.turn.totalRolls < 2) {
+            for(let die of this.dice) {
+                if(!die.keep) {
+                    die.roll();
+                }
             }
+            this.turn.totalRolls++;
         }
-        this.turn.totalRolls++;
     }
 
     endTurn () {
