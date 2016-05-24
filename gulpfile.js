@@ -3,7 +3,6 @@ var config = require('./gulp.config')();
 var port = process.env.PORT || config.defaultPort;
 
 var gulp = require('gulp');
-var merge = require('merge2');
 var scss = require('gulp-sass');
 var exec = require('child_process').exec;
 
