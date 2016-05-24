@@ -25,7 +25,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 AboutComponent = __decorate([
                     core_1.Component({
                         selector: 'about-me',
-                        template: '<p>This is the about page</p>',
+                        templateUrl: 'src/client/app/about/about.component.html',
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AboutComponent);
