@@ -11,28 +11,44 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ContactComponent;
+    var SkillsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ContactComponent = (function () {
-                function ContactComponent() {
-                    this.contact = 'kirklbyers@gmail.com';
+            SkillsComponent = (function () {
+                function SkillsComponent() {
+                    this.skills = [
+                        {
+                            name: 'skill 1',
+                            rating: 5
+                        },
+                        {
+                            name: 'skill 2',
+                            rating: 5
+                        },
+                        {
+                            name: 'skill 3',
+                            rating: 1
+                        },
+                        {
+                            name: 'skill 4',
+                            rating: 2
+                        }
+                    ];
                 }
-                ContactComponent = __decorate([
+                SkillsComponent = __decorate([
                     core_1.Component({
-                        selector: 'contact-kirk',
-                        templateUrl: 'src/client/app/contact/contact.component.html'
+                        selector: 'skills-kirk',
+                        template: '<p>This is the skills page.</p>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], ContactComponent);
-                return ContactComponent;
+                ], SkillsComponent);
+                return SkillsComponent;
             }());
-            exports_1("ContactComponent", ContactComponent);
+            exports_1("SkillsComponent", SkillsComponent);
         }
     }
 });
-//# sourceMappingURL=contact.component.js.map

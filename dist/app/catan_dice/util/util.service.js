@@ -11,28 +11,41 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ContactComponent;
+    var Die, Turn;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ContactComponent = (function () {
-                function ContactComponent() {
-                    this.contact = 'kirklbyers@gmail.com';
+            Die = (function () {
+                function Die() {
+                    this.size = null;
+                    this.value = null;
+                    this.keep = false;
                 }
-                ContactComponent = __decorate([
-                    core_1.Component({
-                        selector: 'contact-kirk',
-                        templateUrl: 'src/client/app/contact/contact.component.html'
-                    }), 
+                Die.prototype.creatDie = function (dieSize) {
+                    this.size = dieSize;
+                    this.value = Math.floor(Math.random() * (this.size - 1 + 1)) + 1;
+                    this.keep = false;
+                };
+                Die.prototype.roll = function () {
+                    this.value = Math.floor(Math.random() * (this.size - 1 + 1)) + 1;
+                };
+                Die = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], ContactComponent);
-                return ContactComponent;
+                ], Die);
+                return Die;
             }());
-            exports_1("ContactComponent", ContactComponent);
+            exports_1("Die", Die);
+            Turn = (function () {
+                function Turn() {
+                    this.totalRolls = 0;
+                }
+                return Turn;
+            }());
+            exports_1("Turn", Turn);
         }
     }
 });
-//# sourceMappingURL=contact.component.js.map

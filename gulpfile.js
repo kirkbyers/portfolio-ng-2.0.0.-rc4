@@ -1,10 +1,14 @@
-var config = require('./gulp.config')();
+const config = require('./gulp.config')();
+const tscConfig = require('./tsconfig.json');
 
-var port = process.env.PORT || config.defaultPort;
+const port = process.env.PORT || config.defaultPort;
 
-var gulp = require('gulp');
-var scss = require('gulp-sass');
-var exec = require('child_process').exec;
+const gulp = require('gulp');
+const scss = require('gulp-sass');
+const typeScript = require('gulp-typescript');
+const exec = require('child_process').exec;
+const del = require('del');
+
 
 gulp.task('tsc', function (cb) {
     exec('npm run tsc:w', function (err, stdout, stderr) {
@@ -23,7 +27,7 @@ gulp.task('styles', [], function () {
         .src(config.scss)
         .pipe(scss())
         .pipe(gulp.dest(config.client + '/styles/'));
-})
+});
 
  gulp.task('watch', function () {
      function reportChange(event){
@@ -32,8 +36,20 @@ gulp.task('styles', [], function () {
     }
 
     gulp.watch('./src/**/**.scss', ['styles']).on('change', reportChange);
+});
+
+ gulp.task('clean', function () {
+     return(del('dist/**/*'));
+ });
+
+ gulp.task('compile', ['clean'], function () {
+     return gulp
+        .src('src/client/app/**/*.ts')
+        .pipe(typeScript(tscConfig.compilerOptions))
+        .pipe(gulp.dest('dist/app'));
  })
 
 gulp.task('dev', ['tsc', 'server', 'watch']);
+gulp.task('build', ['compile']);
 
 gulp.task('default', ['dev']);

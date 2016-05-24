@@ -11,28 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ContactComponent;
+    var ProjectsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ContactComponent = (function () {
-                function ContactComponent() {
-                    this.contact = 'kirklbyers@gmail.com';
+            ProjectsComponent = (function () {
+                function ProjectsComponent() {
+                    this.projects = ['Project 1', 'Project 2', 'Project 3'];
                 }
-                ContactComponent = __decorate([
+                ProjectsComponent = __decorate([
                     core_1.Component({
-                        selector: 'contact-kirk',
-                        templateUrl: 'src/client/app/contact/contact.component.html'
+                        selector: 'projects-kirk',
+                        template: '<p>This is the projects page.</p>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], ContactComponent);
-                return ContactComponent;
+                ], ProjectsComponent);
+                return ProjectsComponent;
             }());
-            exports_1("ContactComponent", ContactComponent);
+            exports_1("ProjectsComponent", ProjectsComponent);
         }
     }
 });
-//# sourceMappingURL=contact.component.js.map
