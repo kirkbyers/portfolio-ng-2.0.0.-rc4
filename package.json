@@ -31,11 +31,15 @@
     "zone.js": "0.6.4"
   },
   "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
     "concurrently": "^2.0.0",
     "del": "^2.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1",
     "gulp-typescript": "^2.13.4",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
     "lite-server": "^2.1.0",
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.9",
