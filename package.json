@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build": "rimraf dist && webpack --config config/webpack.prd.js --progress --profile --bail",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
@@ -42,6 +42,7 @@
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
     "lite-server": "^2.1.0",
+    "rimraf": "^2.5.3",
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.9",
     "typings": "^0.7.9",
