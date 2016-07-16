@@ -2,9 +2,9 @@ import {Component} from '@angular/core';
 
 @Component({
     selector:'projects-kirk',
-    template: '<p>This is the projects page.</p>'
+    templateUrl: 'src/client/app/projects/projects.component.html'
 })
 
 export class ProjectsComponent {
-    public projects = ['Project 1', 'Project 2', 'Project 3'];
+    public projects = ['Project 1', 'Project 2'];
 }

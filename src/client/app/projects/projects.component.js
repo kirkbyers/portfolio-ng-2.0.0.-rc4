@@ -11,12 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ProjectsComponent = (function () {
     function ProjectsComponent() {
-        this.projects = ['Project 1', 'Project 2', 'Project 3'];
+        this.projects = ['Project 1', 'Project 2'];
     }
     ProjectsComponent = __decorate([
         core_1.Component({
             selector: 'projects-kirk',
-            template: '<p>This is the projects page.</p>'
+            templateUrl: 'src/client/app/projects/projects.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], ProjectsComponent);
