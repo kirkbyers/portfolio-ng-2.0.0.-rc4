@@ -11,29 +11,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var SkillsComponent = (function () {
     function SkillsComponent() {
-        this.skills = [
+        this.basicSkills = [
             {
-                name: 'skill 1',
+                name: 'HTML5',
                 rating: 5
             },
             {
-                name: 'skill 2',
+                name: 'CSS3',
                 rating: 5
             },
             {
-                name: 'skill 3',
+                name: 'Git',
                 rating: 1
             },
             {
-                name: 'skill 4',
-                rating: 2
-            }
+                name: 'VanilaJs',
+                rating: 1
+            },
+            {
+                name: 'AngularJs 1.x',
+                rating: 1
+            },
+            {
+                name: 'NodeJs',
+                rating: 1
+            },
+            {
+                name: 'Python',
+                rating: 1
+            },
         ];
     }
     SkillsComponent = __decorate([
         core_1.Component({
             selector: 'skills-kirk',
-            template: '<p>This is the skills page.</p>'
+            templateUrl: 'src/client/app/skills/skills.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], SkillsComponent);

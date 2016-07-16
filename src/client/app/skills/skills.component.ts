@@ -2,26 +2,38 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'skills-kirk',
-    template: '<p>This is the skills page.</p>'
+    templateUrl: 'src/client/app/skills/skills.component.html'
 })
 
 export class SkillsComponent {
-    public skills = [
+    public basicSkills = [
         {
-        name: 'skill 1',
-        rating: 5
+            name: 'HTML5',
+            rating: 5
         },
         {
-        name: 'skill 2',
-        rating: 5
+            name: 'CSS3',
+            rating: 5
         },
         {
-        name: 'skill 3',
-        rating: 1
+            name: 'Git',
+            rating: 1
         },
         {
-        name: 'skill 4',
-        rating: 2
-        }
+            name: 'VanilaJs',
+            rating: 1
+        },
+        {
+            name: 'AngularJs 1.x',
+            rating: 1
+        },
+        {
+            name: 'NodeJs',
+            rating: 1
+        },
+        {
+            name: 'Python',
+            rating: 1
+        },
     ];
 }
