@@ -11,34 +11,51 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var SkillsComponent = (function () {
     function SkillsComponent() {
-        this.basicSkills = [
+        this.skills = [
             {
                 name: 'HTML5',
-                rating: 5
+                rating: 9,
+                class: 'is-success'
             },
             {
                 name: 'CSS3',
-                rating: 5
-            },
-            {
-                name: 'Git',
-                rating: 1
+                rating: 8,
+                class: 'is-success'
             },
             {
                 name: 'VanilaJs',
-                rating: 1
+                rating: 5,
+                class: 'is-success'
             },
             {
                 name: 'AngularJs 1.x',
-                rating: 1
+                rating: 7,
+                class: 'is-info'
+            },
+            {
+                name: 'jQuery',
+                rating: 6,
+                class: 'is-info'
+            },
+            {
+                name: 'Git',
+                rating: 7,
+                class: 'is-warning'
+            },
+            {
+                name: 'Gulp',
+                rating: 5,
+                class: 'is-warning'
             },
             {
                 name: 'NodeJs',
-                rating: 1
+                rating: 3,
+                class: 'is-danger'
             },
             {
                 name: 'Python',
-                rating: 1
+                rating: 4,
+                class: 'is-danger'
             },
         ];
     }

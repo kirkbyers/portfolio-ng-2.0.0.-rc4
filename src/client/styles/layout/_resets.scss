@@ -2,4 +2,8 @@
 
 my-app {
     width: 100%;
+
+    > .hero-content {
+        overflow: auto;
+    }
 }

@@ -1,0 +1,4 @@
+<div class="" *ngFor="#skill of skills">
+    <h1 class="has-text-left">{{skill.name}}</h1>
+    <progress [ngClass]="[skill.class]" class="progress is-primary" value="{{skill.rating}}" max="10"></progress>
+</div>
