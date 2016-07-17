@@ -17,6 +17,7 @@ var AboutComponent = (function () {
         core_1.Component({
             selector: 'about-me',
             templateUrl: 'src/client/app/about/about.component.html',
+            styleUrls: ['src/client/app/about/about.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AboutComponent);

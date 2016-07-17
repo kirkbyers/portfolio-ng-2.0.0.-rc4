@@ -1,0 +1,9 @@
+:host .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+:host .cards > .card {
+    margin: 10px 0;
+}

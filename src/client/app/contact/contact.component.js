@@ -16,7 +16,8 @@ var ContactComponent = (function () {
     ContactComponent = __decorate([
         core_1.Component({
             selector: 'contact-kirk',
-            templateUrl: 'src/client/app/contact/contact.component.html'
+            templateUrl: 'src/client/app/contact/contact.component.html',
+            styleUrls: ['src/client/app/contact/contact.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ContactComponent);

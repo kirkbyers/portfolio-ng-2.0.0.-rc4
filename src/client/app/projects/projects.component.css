@@ -1,7 +1,5 @@
 :host {
-    position: absolute;
-    top: 0px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 :host footer.card-footer {
