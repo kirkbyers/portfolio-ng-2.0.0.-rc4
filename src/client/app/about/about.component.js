@@ -16,8 +16,8 @@ var AboutComponent = (function () {
     AboutComponent = __decorate([
         core_1.Component({
             selector: 'about-me',
-            templateUrl: 'src/client/app/about/about.component.html',
-            styleUrls: ['src/client/app/about/about.component.css']
+            templateUrl: './src/client/app/about/about.component.html',
+            styleUrls: ['./src/client/app/about/about.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AboutComponent);

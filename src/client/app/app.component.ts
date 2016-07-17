@@ -11,7 +11,7 @@ import {NavbarComponent} from '../widgets/navbar/navbar.component';
 
 @Component({
     selector: 'my-app',
-    templateUrl:`src/client/app/app.component.html`,
+    templateUrl:`./src/client/app/app.component.html`,
     directives:[ROUTER_DIRECTIVES, NavbarComponent],
     providers:[ROUTER_PROVIDERS]
 })

@@ -42,7 +42,7 @@ var CatanDiceComponent = (function () {
     CatanDiceComponent = __decorate([
         core_1.Component({
             selector: 'catan-dice',
-            templateUrl: 'src/client/app/catan_dice/catan_dice.component.html'
+            templateUrl: './src/client/app/catan_dice/catan_dice.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], CatanDiceComponent);

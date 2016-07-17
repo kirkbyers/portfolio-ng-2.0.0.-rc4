@@ -16,8 +16,8 @@ var ProjectsComponent = (function () {
     ProjectsComponent = __decorate([
         core_1.Component({
             selector: 'projects-kirk',
-            templateUrl: 'src/client/app/projects/projects.component.html',
-            styleUrls: ['src/client/app/projects/projects.component.css']
+            templateUrl: './src/client/app/projects/projects.component.html',
+            styleUrls: ['./src/client/app/projects/projects.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ProjectsComponent);

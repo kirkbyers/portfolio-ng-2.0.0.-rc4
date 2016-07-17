@@ -13,7 +13,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js', '.ts']
+        extensions: ['', '.js', '.ts', '.css', '.html']
     },
 
     module: {
@@ -22,9 +22,10 @@ module.exports = {
             loaders: ['ts', 'angular2-template-loader']
         }, {
             test: /\.html$/,
-            loader: 'html'
+            loaders: ['html']
         }, {
             test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+            include: helpers.root('src/client/images'),
             loader: 'file?name=assets/[name].[hash].[ext]'
         }, {
             test: /\.scss$/,

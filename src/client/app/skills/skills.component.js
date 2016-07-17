@@ -62,7 +62,7 @@ var SkillsComponent = (function () {
     SkillsComponent = __decorate([
         core_1.Component({
             selector: 'skills-kirk',
-            templateUrl: 'src/client/app/skills/skills.component.html'
+            templateUrl: './src/client/app/skills/skills.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], SkillsComponent);

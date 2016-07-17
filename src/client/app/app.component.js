@@ -23,7 +23,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: "src/client/app/app.component.html",
+            templateUrl: "./src/client/app/app.component.html",
             directives: [router_deprecated_1.ROUTER_DIRECTIVES, navbar_component_1.NavbarComponent],
             providers: [router_deprecated_1.ROUTER_PROVIDERS]
         }),

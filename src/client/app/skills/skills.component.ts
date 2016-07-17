@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'skills-kirk',
-    templateUrl: 'src/client/app/skills/skills.component.html'
+    templateUrl: './src/client/app/skills/skills.component.html'
 })
 
 export class SkillsComponent {

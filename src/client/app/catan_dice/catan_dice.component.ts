@@ -4,7 +4,7 @@ import {Die, Turn} from './util/util.service';
 
 @Component({
     selector: 'catan-dice',
-    templateUrl: 'src/client/app/catan_dice/catan_dice.component.html'
+    templateUrl: './src/client/app/catan_dice/catan_dice.component.html'
 })
 
 export class CatanDiceComponent implements OnInit{
