@@ -8,3 +8,5 @@ import '@angular/router';
 // RxJS
 import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
+// import '../node_modules/bulma';
+import '../src/client/styles/index.scss';
