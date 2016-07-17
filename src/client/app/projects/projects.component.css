@@ -1,0 +1,9 @@
+:host {
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+}
+
+:host footer.card-footer {
+    padding: 5px;
+}

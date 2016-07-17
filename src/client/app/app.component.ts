@@ -46,5 +46,5 @@ import {NavbarComponent} from '../widgets/navbar/navbar.component';
 ])
 
 export class AppComponent {
-    title = 'My First App';
+    title = 'Kirk Byers';
 }

@@ -18,7 +18,7 @@ var catan_dice_component_1 = require('./catan_dice/catan_dice.component');
 var navbar_component_1 = require('../widgets/navbar/navbar.component');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'My First App';
+        this.title = 'Kirk Byers';
     }
     AppComponent = __decorate([
         core_1.Component({
