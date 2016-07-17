@@ -18,7 +18,7 @@ export class SkillsComponent {
             class: 'is-success'
         },
         {
-            name: 'VanilaJs',
+            name: 'VanillaJs',
             rating: 5,
             class: 'is-success'
         },
