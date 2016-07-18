@@ -3,13 +3,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 
-console.log(helpers.root('src/client/styles'));
-
 module.exports = {
     entry: {
         'polyfills': './config/polyfills.ts',
         'vendor': './config/vendor.ts',
-        'app': './src/client/main.ts'
+        'app': './src/main.ts'
     },
 
     resolve: {
@@ -25,14 +23,15 @@ module.exports = {
             loaders: ['html']
         }, {
             test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-            include: helpers.root('src/client/images'),
+            include: helpers.root('src/images'),
             loader: 'file?name=assets/[name].[hash].[ext]'
         }, {
             test: /\.scss$/,
-            loaders: ["style", "css", "sass"]
+            loaders: ["style", "css", "sass"],
+            exclude: helpers.root('src','app'),
         }, {
             test: /\.css$/,
-            exclude: helpers.root('src/client/styles'),
+            exclude: helpers.root('src', 'app'),
             loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
         }, {
             test: /\.css$/,
@@ -42,7 +41,7 @@ module.exports = {
     },
 
     sassLoader: {
-        includedPaths: [helpers.root('src/client/styles/index.scss')]
+        includedPaths: [helpers.root('src/styles/index.scss')]
     },
 
     plugins: [
@@ -51,7 +50,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: 'index.html'
+            template: 'src/index.html'
         })
     ]
 };
