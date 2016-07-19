@@ -3,5 +3,10 @@ navbar {
         >.container {
             justify-content: center;
         }
+        &.navbar {
+            > a {
+                margin: 0 5px;
+            }
+        }
     }
 }

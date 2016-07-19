@@ -38,6 +38,11 @@ var SkillsComponent = (function () {
                 class: 'is-info'
             },
             {
+                name: 'WordPress',
+                rating: 6,
+                class: 'is-info'
+            },
+            {
                 name: 'Git',
                 rating: 7,
                 class: 'is-warning'
@@ -45,6 +50,16 @@ var SkillsComponent = (function () {
             {
                 name: 'Gulp',
                 rating: 5,
+                class: 'is-warning'
+            },
+            {
+                name: 'Webpack',
+                rating: 4,
+                class: 'is-warning'
+            },
+            {
+                name: 'SASS',
+                rating: 6,
                 class: 'is-warning'
             },
             {
@@ -62,7 +77,8 @@ var SkillsComponent = (function () {
     SkillsComponent = __decorate([
         core_1.Component({
             selector: 'skills-kirk',
-            template: require('./skills.component.html')
+            template: require('./skills.component.html'),
+            styles: [require('./skills.component.css')]
         }), 
         __metadata('design:paramtypes', [])
     ], SkillsComponent);

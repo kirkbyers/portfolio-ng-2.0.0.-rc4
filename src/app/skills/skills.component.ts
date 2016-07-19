@@ -2,7 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'skills-kirk',
-    template: require('./skills.component.html')
+    template: require('./skills.component.html'),
+    styles: [require('./skills.component.css')]
 })
 
 export class SkillsComponent {
@@ -33,6 +34,11 @@ export class SkillsComponent {
             class: 'is-info'
         },
         {
+            name: 'WordPress',
+            rating: 6,
+            class: 'is-info'
+        },
+        {
             name: 'Git',
             rating: 7,
             class: 'is-warning'
@@ -40,6 +46,16 @@ export class SkillsComponent {
         {
             name: 'Gulp',
             rating: 5,
+            class: 'is-warning'
+        },
+        {
+            name: 'Webpack',
+            rating: 4,
+            class: 'is-warning'
+        },
+        {
+            name: 'SASS',
+            rating: 6,
             class: 'is-warning'
         },
         {

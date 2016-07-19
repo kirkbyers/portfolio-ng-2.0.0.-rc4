@@ -1,0 +1,35 @@
+:host ul {}
+
+:host li {
+    display: inline-block;
+}
+
+:host li::before {
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    margin: 10px 5px;
+    background-color: #000;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+:host .legend h3 {
+    margin: 10px 0;
+}
+
+:host li.is-success::before {
+    background-color: #97CD76
+}
+
+:host li.is-info::before {
+    background-color: #42AFE3
+}
+
+:host li.is-warning::before {
+    background-color: #FCE473
+}
+
+:host li.is-danger::before {
+    background-color: #ED6C63
+}
