@@ -22,8 +22,8 @@ module.exports = {
             test: /\.html$/,
             loaders: ['html']
         }, {
-            test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-            include: helpers.root('src/images'),
+            test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|pdf)$/,
+            include: helpers.root('src', 'images'),
             loader: 'file?name=assets/[name].[hash].[ext]'
         }, {
             test: /\.scss$/,
